@@ -1,0 +1,68 @@
+.message {
+    display: flex;
+    border: 2px solid blue;
+    border-radius: 10px;
+    min-width: 550px;
+    max-width: 550px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.message_license {
+    padding: 20px 130px 20px 10px;
+    font-size: 24px;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.message_license:hover {
+    background: lightgrey;
+}
+
+.message_license:active {
+    box-shadow: 0px 1px 14px 11px rgba(34, 60, 80, 0.29) inset;
+}
+
+.btn_message_del {
+    border: none;
+    border-radius: 0;
+    background: blue;
+    width: 100px;
+    font-size: 18px;
+    color: white;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.btn_message_del:hover {
+    background: navy;
+}
+
+.btn_message_del:active {
+    opacity: 0.6;
+}
+
+.btn_message_del:disabled {
+    background: grey;
+    opacity: 1;
+    cursor: default;
+}
+
+.new {
+    box-shadow: 0px 0px 10px 22px rgba(218, 231, 10, 0.2);
+}
+
+@media (max-width: 1480px) {
+    .message {
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    .message_license {
+        padding: 20px 0px 20px 10px;
+        font-size: 18px;
+    }
+}

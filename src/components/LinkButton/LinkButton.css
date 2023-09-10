@@ -1,0 +1,42 @@
+.btn {
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn_auth {
+    font-size: 16px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.btn_auth:hover {
+    background: navy;
+}
+
+.btn_auth:active {
+    opacity: 0.6;
+}
+
+.btn_message {
+    display: flex;
+    align-self: center;
+    background: blue;
+    color: white;
+    font-size: 22px;
+    padding: 10px 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.btn_message:hover {
+    background: navy;
+}
+
+.btn_message:active {
+    opacity: 0.6;
+}

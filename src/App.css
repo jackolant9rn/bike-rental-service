@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn_submit {
+  font-size: 16px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: blue;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.btn_submit:hover {
+  background: navy;
+}
+
+.btn_submit:active {
+  opacity: 0.6;
+}

@@ -1,0 +1,64 @@
+.editor {
+    position: absolute;
+    top: 40px;
+    height: 400px;
+    width: 300px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0);
+}
+
+.editor_form {
+    position: relative;
+    background: white;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 22px rgba(255, 255, 255, 0.2);
+}
+
+.editor_title {
+    align-self: flex-start;
+    margin-left: 5px;
+}
+
+.editor_item {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin: 0 20px;
+    margin-bottom: 10px;
+}
+
+.editor_item:nth-last-child(2) {
+    flex-direction: row;
+}
+
+.editor_label {
+    font-style: 16px;
+    margin-bottom: 5px;
+}
+
+.editor_input {
+    height: 30px;
+    font-size: 16px;
+    width: 300px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+}
+
+.btn_cancel:hover {
+    background: grey;
+}

@@ -1,0 +1,172 @@
+.message_info {
+    display: flex;
+    flex-direction: column;
+    background: lightgrey;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 30px;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.message_title,
+.message_owner_full_name,
+.message_text,
+.message_date,
+.resolution_form,
+.message_resolution {
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.message_title {
+    font-size: 20px;
+}
+
+.message_text,
+.message_resolution {
+    font-size: 18px;
+}
+
+.message_dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message_date {
+    font-size: 12px;
+}
+
+.load {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.load_img {
+    background: url('../../assets/svg/waiting.svg') no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.load_text {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.message_btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_edit_message {
+    border: 2px solid black;
+    background: white;
+    padding: 5px;
+}
+
+.btn_edit_message:hover {
+    background: grey;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn_edit_message:active {
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn_edit_message:disabled {
+    background: lightslategrey;
+    box-shadow: none;
+    cursor: default;
+}
+
+.resolution_form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resolution_input {
+    border: none;
+    outline: none;
+    width: 80%;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+}
+
+.resolution_input::placeholder {
+    font-size: 18px;
+}
+
+.btn_resolution {
+    border: 2px solid lightgrey;
+    background: white;
+}
+
+.btn_resolution:hover {
+    background: grey;
+}
+
+.btn_resolution:active {
+    opacity: 0.6;
+}
+
+.message_resolution {
+    align-self: flex-end;
+}
+
+.btn_done {
+    border: 2px solid black;
+    background: white;
+}
+
+.btn_done:hover {
+    background: lightblue;
+    color: white;
+}
+
+.btn_done:active {
+    opacity: 0.6;
+}
+
+.btn_done:disabled {
+    background: lightgrey;
+    box-shadow: none;
+    cursor: default;
+    color: black;
+}
+
+.message_info_link {
+    color: white;
+    align-self: end;
+}
+
+.message_info_link:hover {
+    color: blue;
+}
+
+.done {
+    background: lightblue;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1480px) {
+    .message_info {
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    .message_title {
+        font-size: 24px;
+    }
+
+    .message_owner_full_name {
+        font-size: 18px;
+    }
+}

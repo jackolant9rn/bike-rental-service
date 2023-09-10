@@ -1,0 +1,7 @@
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 10px 10px 0;;
+    width: 200px;
+}

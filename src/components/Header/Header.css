@@ -1,0 +1,79 @@
+.header {
+    background: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 18px;
+    font-style: italic;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.logo_img {
+    background: url("../../assets/svg/bicycle.svg") no-repeat center;
+    width: 50px;
+    height: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-self: end;
+    font-size: 16px;
+}
+
+.nav_item {
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white
+}
+
+.nav_item:hover {
+    background: navy;
+}
+
+.nav > .active {
+    background: navy;
+}
+
+@media (max-width: 1000px) {
+    .title {
+        display: none;
+    }
+    .nav {
+        font-size: 12px;
+        align-self: auto;
+    }
+    .nav_item {
+        width: 100px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        margin: 0 5px 0 0;
+    }
+}

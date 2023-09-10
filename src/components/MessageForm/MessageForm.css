@@ -1,0 +1,56 @@
+.message_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 10px 6px rgba(0, 0, 0, 0.33);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.message_form_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.message_form_label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.message_form_input,
+.message_form_select {
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+    width: 300px;
+    padding-left: 5px;
+}
+
+.message_form_textarea {
+    width: 300px;
+    height: 100px;
+    outline: none;
+    resize: none;
+    padding: 5px;
+}
+
+.btn_submit-message {
+    border-radius: 0;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    background: blue;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.btn_submit-message:hover {
+    background: navy;
+}
+
+.btn_submit-message:active {
+    opacity: 0.6;
+}
