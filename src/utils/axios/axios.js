@@ -10,9 +10,13 @@ export const instance = axios.create({
 
 export const instanceAuth = axios.create({
   baseURL: 'https://sf-final-project-be.herokuapp.com/api/',
-  timeout: 1000,
-  headers: {
+  timeout: 1000
+})
+
+instanceAuth.interceptors.request.use((config) => {
+  config.headers = {
     'Content-type': 'application/json',
-    'Authorization': 'Bearer ' + window.localStorage.getItem('token')
-  },
+    'Authorization': `Bearer ${window.localStorage.getItem('token')}`
+  }
+    return config
 })

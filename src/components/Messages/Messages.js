@@ -11,7 +11,8 @@ function Messages() {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        instanceAuth.get('cases').then(response => dispatch(allmessages(response.data.data)))
+        instanceAuth.get('cases')
+            .then(response => dispatch(allmessages(response.data.data)))
     }, [])
 
     const removeMessage = (id) => {

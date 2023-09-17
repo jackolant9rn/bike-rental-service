@@ -39,7 +39,8 @@ function Officers() {
   }
 
   useEffect(() => {
-    instanceAuth.get('officers').then(response => dispatch(allofficers(response.data.officers)))
+      instanceAuth.get('officers')
+        .then(response => dispatch(allofficers(response.data.officers)))
   }, [])
 
   return (

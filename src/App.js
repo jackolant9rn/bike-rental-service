@@ -7,8 +7,6 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import { login, logout } from './store/slice/auth/auth';
 import { instance, instanceAuth } from './utils/axios/axios';
-import { allmessages } from './store/slice/messages/messages';
-import { allofficers } from './store/slice/officers/officers';
 
 function App() {
 
@@ -23,9 +21,8 @@ function App() {
       await instance.post('auth/sign_up', obj)
       navigate('/auth/sign_in')
     } catch (e) {
-      alert(e.response.data.message)
+      console.log(e.response.data.message)
     }
-
   }
 
   const authSubmit = (obj) => {
@@ -37,7 +34,7 @@ function App() {
         })
       navigate('/')
     } catch (e) {
-      alert(e.response.data.message)
+      console.log(e.response.data.message)
     }
   }
 
@@ -52,18 +49,6 @@ function App() {
       instanceAuth.get('auth').then(response => {
         dispatch(login(response.data))
       })
-    }
-  }, [])
-
-  useEffect(() => {
-    if(token) {
-      instanceAuth.get('officers').then(response => dispatch(allofficers(response.data.officers)))
-    }
-  }, [])
-
-  useEffect(() => {
-    if(token) {
-      instanceAuth.get('cases').then(response => dispatch(allmessages(response.data.data)))
     }
   }, [])
 
